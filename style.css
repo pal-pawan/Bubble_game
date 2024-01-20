@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Rubik+Burned&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',serif;
 }
 body{
     width: 100vw;
@@ -15,7 +16,8 @@ body{
 .gameContainer {
     width: 85%;
     height: 90%;
-    color: #eb5e28;
+    color: #ffffff;
+    font-family: 'Rubik Burned', system-ui;
     font-weight: 800;
     font-size: xx-large;
     border-radius: 20px;
@@ -26,12 +28,13 @@ body{
 .scoreBoard{
 width: 100%;
 height: 10%;
-background-color: #252422;
+background-color: #0f0f0f;
 display: flex;
 justify-content: space-around;
 align-items: center;
 }
 .gameBoard{
+    padding:20px;
     width: 100%;
     height: 90%;
     flex-wrap: wrap;
@@ -45,6 +48,18 @@ align-items: center;
 
 .gameBoard strong{
     font-size: xxx-large;
+    background: rgba(130, 130, 130, 0.15);
+    box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.726);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    color:rgb(255, 255, 255);
+    padding: 6%;
+    border-radius: 15px;
+    text-shadow: #0f0f0f 2px 2px 2px;
+}
+
+.gameBoard span{
+    color: #f6ff00;
 }
 
 .bubble{
@@ -55,14 +70,20 @@ align-items: center;
     border-radius: 50%;
     font-size: x-large;
     background-color: #0fa3b1;
+    color:black;
+    font-family: 'poppins',serif;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 300ms;
-    box-shadow: #2e6469 5px 8px 9px;
+    background: rgba(130, 130, 130, 0.15);
+    box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.726);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(7.1px);
 }
 .bubble:hover{
     font-size: xx-large;
-    background-color: #0ab3c2;
+    background: rgba(255, 255, 255, 0.333);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
