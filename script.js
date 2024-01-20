@@ -15,7 +15,7 @@ document.querySelector(".gameBoard").addEventListener("click",(dets)=>{
 
 function makeBubbles(){
     let bubbles = '';
-    for(let i=0;i<72;i++){
+    for(let i=0;i<78;i++){
         let randInt = Math.floor((Math.random()*9)+1);
         bubbles+= `<div class="bubble">${randInt}</div>`
     }
